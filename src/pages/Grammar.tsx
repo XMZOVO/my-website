@@ -17,7 +17,7 @@ const Grammar: Component = () => {
   const [title, setTitle] = createSignal("かかわらず");
   const [imgSrc, setImgSrc] = createSignal("");
   const [imgLoaded, setImgLoaded] = createSignal(true);
-  const IP = "http://localhost:8081";
+  const IP = "/api";
   const levelColor = {
     N1: "bg-red",
     N2: "bg-orange",
