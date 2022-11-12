@@ -126,7 +126,7 @@ const Grammar: Component = () => {
                   }
                   grayscale={book.show ? "1" : ""}
                 ></div>
-                <div text-xs hidden lg:visible>
+                <div text-xs hidden lg:block>
                   {book.name}
                 </div>
               </div>
