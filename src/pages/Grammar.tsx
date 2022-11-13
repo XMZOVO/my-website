@@ -49,6 +49,10 @@ const Grammar: Component = () => {
   ]);
   createEffect(async () => {
     if (title()) {
+      setBlueGrammar([]);
+      setPreGrammar([]);
+      setMasterGrammar([]);
+      setDicGrammar([]);
       const res = await axios.get(`${IP}/grammar/${title()}`);
       if (res.data) {
         setBlueGrammar(res.data.blue);
