@@ -4,6 +4,7 @@ import {
   createSignal,
   For,
   Match,
+  onMount,
   Show,
   Switch,
 } from "solid-js";
@@ -17,6 +18,10 @@ interface Grammar {
   path: string;
   level: null | string;
 }
+
+onMount(() => {
+  window.location.href = "http://36.139.161.136:2052/grammar/";
+});
 
 const Grammar: Component = () => {
   const [blueGrammar, setBlueGrammar] = createSignal<Grammar[]>([]);
