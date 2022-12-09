@@ -58,7 +58,7 @@ const Grammar: Component = () => {
       setPreGrammar([]);
       setMasterGrammar([]);
       setDicGrammar([]);
-      const res = await axios.get(`${IP}/grammar/${title()}`);
+      const res = await axios.get(`${IP}/grammar/title/${title()}`);
       if (res.data) {
         setBlueGrammar(res.data.blue);
         setPreGrammar(res.data.pre);
